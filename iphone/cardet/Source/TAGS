@@ -1,0 +1,142 @@
+
+GLRendererComponent.cpp,553
+namespace cardet8,162
+  GLRendererComponent::GLRendererComponent(cardet::GLRendererComponent::GLRendererComponent11,182
+  GLRendererComponent::~GLRendererComponent(cardet::GLRendererComponent::~GLRendererComponent16,243
+  void GLRendererComponent::BeginScene(cardet::GLRendererComponent::BeginScene21,303
+  void GLRendererComponent::EndScene(cardet::GLRendererComponent::EndScene34,572
+  void GLRendererComponent::Render(cardet::GLRendererComponent::Render39,621
+  void GLRendererComponent::Render(cardet::GLRendererComponent::Render45,775
+
+GameShim.cpp,370
+int                        gCurrTimeMs 8,156
+int                        gStartTimeMs 9,200
+cardet::ImageCache         gImageCache;10,245
+cardet::GameTable          *theTable theTable12,286
+cardet::IRendererComponent *renderer renderer13,331
+cardet::IInputComponent    *input input14,376
+void GameInit(16,419
+void GameTick(30,744
+void GameProcessTouch(41,905
+
+GameTable.cpp,260
+namespace cardet 7,125
+  GameTable::GameTable(cardet::GameTable::GameTable10,146
+  GameTable::~GameTable(cardet::GameTable::~GameTable15,241
+  void GameTable::Init(cardet::GameTable::Init21,314
+  void GameTable::Update(cardet::GameTable::Update27,414
+
+ImageCache.cpp,268
+namespace cardet4,45
+  ImageCache::ImageCache(cardet::ImageCache::ImageCache13,148
+  ImageCache::~ImageCache(cardet::ImageCache::~ImageCache18,189
+  void ImageCache::Clear(cardet::ImageCache::Clear23,227
+  void ImageCache::Init(cardet::ImageCache::Init35,470
+
+Sprite.cpp,167
+namespace cardet5,72
+  Sprite::Sprite(cardet::Sprite::Sprite8,92
+  Sprite::~Sprite(cardet::Sprite::~Sprite13,125
+  void Sprite::Init(cardet::Sprite::Init18,155
+
+SpriteDefinitions.cpp,22
+namespace cardet3,32
+
+TouchInputComponent.cpp,477
+namespace cardet4,54
+  TouchInputComponent::TouchInputComponent(cardet::TouchInputComponent::TouchInputComponent7,74
+  TouchInputComponent::~TouchInputComponent(cardet::TouchInputComponent::~TouchInputComponent12,129
+  void TouchInputComponent::Update(cardet::TouchInputComponent::Update17,185
+  void TouchInputComponent::Update(cardet::TouchInputComponent::Update22,250
+  void TouchInputComponent::UpdateCursorPos(cardet::TouchInputComponent::UpdateCursorPos27,315
+
+Util.cpp,160
+namespace cardet5,61
+  const char *GetSystemPathForFile(cardet::GetSystemPathForFile8,81
+  int Sys_IphoneMilliseconds(cardet::Sys_IphoneMilliseconds13,170
+
+Common.h,22
+#define COMMON_H2,17
+
+EAGLView.h,28
+@interface EAGLView 17,476
+
+ES1Renderer.h,31
+@interface ES1Renderer 14,208
+
+ES2Renderer.h,31
+@interface ES2Renderer 14,208
+
+ESRenderer.h,48
+@protocol ESRenderer <NSObject>NSObject14,219
+
+GLRendererComponent.h,78
+#define GLGAMETABLERENDERCOMPONENT_H2,37
+  class GLRendererComponent 13,182
+
+GameCard.h,46
+#define GAMECARD_H2,19
+  class GameCard7,59
+
+GameShim.h,24
+#define GAMESHIM_H2,19
+
+GameTable.h,114
+#define GAMETABLE_H2,20
+  class GameTable11,131
+    void set_renderer(17,207
+    void set_inputhandler(18,286
+
+IInputComponent.h,125
+#define IINPUTCOMPONENT_H2,26
+  class IInputComponent8,92
+    IInputComponent(11,130
+    virtual ~IInputComponent(12,157
+
+IRendererComponent.h,139
+#define RENDERERCOMPONENTS_H2,29
+  class IRendererComponent12,182
+    IRendererComponent(15,223
+    virtual ~IRendererComponent(16,253
+
+ImageCache.h,328
+#define IMAGECACHE_H2,21
+  enum ImageId10,125
+    GameTableImageId 12,144
+  class ImageCache15,176
+    imgdata_t const *Get(Get21,255
+    typedef std::vector<imgdata_t *> CacheVector;ImageCache::CacheVector25,366
+    typedef std::vector<imgdata_t *>::iterator CacheVectorIterator;ImageCache::CacheVectorIterator26,416
+
+Sprite.h,225
+#define SPRITE_H2,17
+  class Sprite10,111
+    void set_x(16,178
+    void set_y(17,214
+    void set_width(18,250
+    float get_x(20,303
+    float get_y(21,342
+    float get_width(22,381
+    ImageId get_imageId(24,429
+
+SpriteDefinitions.h,147
+#define SPRITEDEFINITIONS_H2,28
+  enum SpriteId9,102
+      GameTableSpriteId 11,124
+  typedef struct spritedef_s14,161
+  } spritedef_t;20,280
+
+TouchInputComponent.h,134
+#define TOUCHINPUTCOMPONENT_H2,30
+  typedef struct cursorinput_s9,128
+  } cursorinput_t;13,189
+  class TouchInputComponent 18,247
+
+Util.h,20
+#define UTIL_H2,15
+
+cardetAppDelegate.h,61
+@class EAGLView;11,155
+@interface cardetAppDelegate 13,173
+
+GameCard.cpp,0

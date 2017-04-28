@@ -1,0 +1,30 @@
+syntax: glob
+.DS_Store
+ 
+# Temporary files used by the vim editor.
+.*.swp
+ 
+# Temporary files used by TestMate
+._*
+ 
+# build directories
+**/build/*
+build/*
+ 
+# XCode user data
+**.pbxuser
+**.mode?v?
+**.perspectivev?
+ 
+# documentation
+**.docset/*
+
+# python
+build
+dist
+*.pyc
+
+# emacs crap
+*~
+.\#*
+
